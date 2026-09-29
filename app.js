@@ -14,7 +14,7 @@ app.set("view engine", "ejs");
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// Socket.IO connection
+// Socket.IO connection 
 io.on("connection", function (socket) {
     console.log("User connected:", socket.id);
 
